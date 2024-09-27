@@ -988,7 +988,7 @@ section,
   color: var(--default-color);
   padding: 30px;
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  /* text-align: center; */
   transition: 0.3s;
   height: 100%;
   border: 0;
@@ -1004,6 +1004,8 @@ section,
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 18px;
+  text-align: center;
+
 }
 
 .values .card:hover {
@@ -1014,6 +1016,37 @@ section,
   transform: scale(1);
 }
 
+.values .btn-get-started {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+.values .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.values .btn-get-started:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+.values .btn-get-started:hover i {
+  transform: translateX(5px);
+}
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
